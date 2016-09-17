@@ -191,9 +191,7 @@ $EndComp
 Wire Wire Line
 	2750 8300 2950 8300
 Wire Wire Line
-	3250 8300 3400 8300
-Wire Wire Line
-	3400 8300 4200 8300
+	3250 8300 4200 8300
 $Comp
 L C C?
 U 1 1 57A365B0
@@ -255,9 +253,7 @@ F 3 "" H 2750 8750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 8150 2750 8300
-Wire Wire Line
-	2750 8300 2750 8450
+	2750 8150 2750 8450
 Connection ~ 2750 8300
 Wire Wire Line
 	2750 7850 2750 7650
@@ -430,34 +426,6 @@ F 3 "" H 11350 5550 50  0000 C CNN
 	1    11350 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR?
-U 1 1 57A3B1A6
-P 11000 5350
-F 0 "#PWR?" H 11000 5200 50  0001 C CNN
-F 1 "+3.3V" H 11000 5490 50  0000 C CNN
-F 2 "" H 11000 5350 50  0000 C CNN
-F 3 "" H 11000 5350 50  0000 C CNN
-	1    11000 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11000 5400 11000 5350
-Wire Wire Line
-	11150 5400 11000 5400
-$Comp
-L GND #PWR?
-U 1 1 57A3B2FF
-P 11000 5750
-F 0 "#PWR?" H 11000 5500 50  0001 C CNN
-F 1 "GND" H 11000 5600 50  0000 C CNN
-F 2 "" H 11000 5750 50  0000 C CNN
-F 3 "" H 11000 5750 50  0000 C CNN
-	1    11000 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11000 5700 11000 5750
 Wire Wire Line
 	11150 5700 11000 5700
 Text Label 10300 5500 0    60   ~ 0
@@ -479,9 +447,7 @@ SWCLK
 Text Notes 11450 5700 0    60   ~ 0
 Serial Wire\nprogramming\nand debug
 Wire Wire Line
-	9300 7200 9900 7200
-Wire Wire Line
-	9900 7200 10100 7200
+	9300 7200 10100 7200
 $Comp
 L CONN_01X02 J7
 U 1 1 57A3C253
@@ -520,9 +486,7 @@ F 3 "" H 10550 6250 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10700 6250 10850 6250
-Wire Wire Line
-	10850 6250 11150 6250
+	10700 6250 11150 6250
 $Comp
 L GND #PWR?
 U 1 1 57A3C88F
@@ -537,15 +501,9 @@ $EndComp
 Wire Wire Line
 	4650 6400 4650 6550
 Wire Wire Line
-	4650 6550 4750 6550
+	4650 6550 5250 6550
 Wire Wire Line
-	4750 6550 4950 6550
-Wire Wire Line
-	4950 6550 5250 6550
-Wire Wire Line
-	4950 6400 4950 6550
-Wire Wire Line
-	4950 6550 4950 6600
+	4950 6400 4950 6600
 Wire Wire Line
 	4750 6550 4750 6400
 Connection ~ 4750 6550
@@ -564,17 +522,9 @@ $EndComp
 Wire Wire Line
 	5250 2900 5250 3000
 Wire Wire Line
-	3350 2900 4650 2900
+	3350 2900 5250 2900
 Wire Wire Line
-	4650 2900 4750 2900
-Wire Wire Line
-	4750 2900 4950 2900
-Wire Wire Line
-	4950 2900 5250 2900
-Wire Wire Line
-	4950 2800 4950 2900
-Wire Wire Line
-	4950 2900 4950 3000
+	4950 2800 4950 3000
 Connection ~ 4950 2900
 Wire Wire Line
 	4750 3000 4750 2900
@@ -958,4 +908,40 @@ Text Label 10200 3750 0    60   ~ 0
 LED_4-battery_state
 Text Notes 7850 4000 0    60   ~ 0
 // Phase current\n// Voltage measured values:\n//  4.7A | 1.77V\n//  2.8A | 1.74V\n//    0A | 1.71V\n// -2.8A | 1.68V\n// -4.7A | 1.65V\n// about 12.7mv for each 1A
+$Comp
+L +3.3V #PWR?
+U 1 1 57DD8441
+P 10850 5850
+F 0 "#PWR?" H 10850 5700 50  0001 C CNN
+F 1 "+3.3V" H 10850 5990 50  0000 C CNN
+F 2 "" H 10850 5850 50  0000 C CNN
+F 3 "" H 10850 5850 50  0000 C CNN
+	1    10850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57DD8641
+P 10850 5200
+F 0 "#PWR?" H 10850 4950 50  0001 C CNN
+F 1 "GND" H 10850 5050 50  0000 C CNN
+F 2 "" H 10850 5200 50  0000 C CNN
+F 3 "" H 10850 5200 50  0000 C CNN
+	1    10850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5400 11000 5150
+Wire Wire Line
+	11000 5150 10850 5150
+Wire Wire Line
+	10850 5150 10850 5200
+Wire Wire Line
+	11000 5400 11150 5400
+Wire Wire Line
+	11000 5700 11000 5900
+Wire Wire Line
+	11000 5900 10850 5900
+Wire Wire Line
+	10850 5900 10850 5850
 $EndSCHEMATC
